@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Home page', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const homeElement = screen.getByText(/Accueil/);
+  expect(homeElement).toBeInTheDocument();
+  expect(homeElement).toHaveClass("active");
 });
+

@@ -1,0 +1,53 @@
+/* src/styles/layout.scss */
+ 
+.layout-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    height: 68px;
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+  
+    ul {
+        list-style: none;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 24px;
+  
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+  
+        a {
+            text-decoration: none;
+            color: #000000;
+        
+            &.active {
+                text-decoration: underline;
+                cursor: default;
+            }
+
+        }
+    }
+}
+  
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+  
