@@ -42,20 +42,40 @@ header {
     }
 }
   
-footer {
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #000000;
     color: #FFFFFF;
     padding: 10px;
-    text-align: center;
-    align-content: end;
     height: 190px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 500;
     box-sizing: border-box;
-    gap: 30px;
     line-height: 35px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    &__logo{
+        position: relative;
+        top: 15px;
+        width: 100px;
+        margin: 20px auto 10px auto;
+
     
+    }
+
+    &__text {
+        @media screen and (max-width: 768px) {
+            width: 100px;
+            margin: 0 auto;
+            line-height: 20px;
+        } 
+    }
 }
   

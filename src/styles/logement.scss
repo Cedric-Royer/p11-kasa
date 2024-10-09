@@ -5,18 +5,30 @@
     max-width: 1240px;
     margin: 0 auto;
 
-
-
     &__title {
         margin: 0;
         font-family: "Montserrat", sans-serif;
         font-size: 26px;
         font-weight: 500;
         color: #FF6060;
-
     }
 
     &__location {
         margin: 0
+    }
+
+    &__equipments-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+
+    &__collapse-container {
+        display:flex;
+        gap: 60px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 }

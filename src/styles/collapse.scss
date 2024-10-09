@@ -1,9 +1,9 @@
 .collapse {
     margin-bottom: 1.5rem;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-family: "Montserrat", sans-serif;
+
 
     &__category {
         display: flex;
@@ -14,12 +14,11 @@
         color: #fff;
         border: none;
         cursor: pointer;
-        font-size: 22px;
-        font-weight: 700;
         border-radius: 5px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
+        box-sizing: border-box;
     }
 
     button {
@@ -30,12 +29,23 @@
         font: inherit;
         color: inherit;
         line-height: normal;
-        font-size: 24px;
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
 
         &.rotate {
             transform: rotate(180deg);
+        }
+
+        &.large {
+            font-size: 24px;
+        }
+
+        &.medium {
+            font-size: 24px;
+        }
+
+        &.small {
+            font-size: 16px;
         }
     }
 
@@ -70,4 +80,34 @@
             opacity: 1;
         }
     }
+
+    &.large {
+        width: 80%;
+        
+        .collapse__category {
+            font-size: 22px;
+            font-weight: 700;
+            height: 54px;
+        }
+    }
+
+    &.medium {
+        width: 60%;
+        .collapse__category {
+            font-size: 16px;
+            font-weight: 700;
+            height: 52px;
+        }
+
+    }
+
+    &.small {
+        width: 90%;
+        .collapse__category {
+            font-size: 12px;
+            font-weight: 700;
+            height: 30px;
+        }
+
+    }    
 }

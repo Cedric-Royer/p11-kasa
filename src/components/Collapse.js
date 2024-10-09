@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/collapse.scss';
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content, size = 'medium' }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -9,13 +9,11 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div className="collapse">
-      <div
-        className="collapse__category"
-      >
+    <div className={`collapse ${size}`}>
+      <div className="collapse__category">
         {title}
         <button 
-          className={isOpen ? 'rotate' : ''} 
+          className={`${size} ${isOpen ? 'rotate' : ''}`}
           onClick={toggleCollapse}> 
           <i className="fa-solid fa-chevron-up"></i>
         </button>
