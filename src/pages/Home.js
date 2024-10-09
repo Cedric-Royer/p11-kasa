@@ -10,9 +10,9 @@ function Home() {
         {logementsData.map((logement) => (
           <Card 
             key={logement.id}
+            id={logement.id}
             title={logement.title}
             cover={logement.cover}
-            location={logement.location}
           />
         ))}
       </div>

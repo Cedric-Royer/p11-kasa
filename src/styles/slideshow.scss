@@ -1,0 +1,45 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    margin: 20px auto 10px auto;
+  
+    &__picture{
+        width: 100%;
+        margin: 0 auto;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+  
+    &__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      cursor: pointer;
+      font-size: 2rem;
+      background-color: transparent;
+  
+      &.left {
+        left: 10px;
+      }
+  
+      &.right {
+        right: 10px;
+      }
+  
+    }
+  
+    &__counter {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        color: #FFFFFF;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+  }
+  

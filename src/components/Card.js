@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/card.scss';
 
-function Card({ title, cover}) {
+function Card({ id, title, cover }) {
   return (
-    <div className="card">
+    <Link to={`/logement/${id}`} className="card">
       <img src={cover} alt={title} className="card__image" />
       <div className="card__overlay"></div>
       <div className="card__content">
         <span className="card__title">{title}</span>
       </div>
-    </div>
+    </Link>
   );
 }
 

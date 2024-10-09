@@ -1,0 +1,22 @@
+.logement{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+
+
+    &__title {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        color: #FF6060;
+
+    }
+
+    &__location {
+        margin: 0
+    }
+}
