@@ -18,6 +18,10 @@
     height: 340px;
     width: 340px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        height: 255px;
+    }
   
     &__image {
       width: 100%;
