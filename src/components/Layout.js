@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../styles/layout.scss'; 
+import '../styles/components/layout.scss'; 
 
 function Layout({ children }) {
     const location = useLocation();

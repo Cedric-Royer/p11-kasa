@@ -1,0 +1,51 @@
+$font-primary: "Montserrat", sans-serif;
+$color-primary: #FF6060;
+
+.notFound-page-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    color: $color-primary;
+    font-family: $font-primary;
+    justify-content: space-around;
+    height: 70vh;
+
+}
+
+.error-code{
+    font-size: 288px;
+    font-weight: 700;
+    color: $color-primary;
+    @media screen and (max-width: 1024px) {
+        font-size: 192px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 96px;
+    }
+}
+
+.error-message {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 20px;
+    text-align: center;
+    @media screen and (max-width: 1024px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+
+}
+
+.back-link {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500; 
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }  
+}

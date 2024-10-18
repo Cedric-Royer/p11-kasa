@@ -1,6 +1,6 @@
 import React from 'react';
 import Collapse from '../components/Collapse';
-import '../styles/about.scss';
+import '../styles/pages/about.scss';
 import useWindowSize from '../hooks/useWindowSize';
 import Banner from '../components/Banner';
 import aboutBanner from '../images/about-banner.png';
@@ -10,7 +10,7 @@ const About = () => {
   const collapseSize = width > 768 ? 'large' : 'small';
   return (
     <div className="about">
-      <Banner imageSrc={aboutBanner}  />
+      <Banner imageSrc={aboutBanner} overlayOpacity="0.3" />
       <Collapse
         size={collapseSize} 
         title="Fiabilité" 

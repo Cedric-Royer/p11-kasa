@@ -10,6 +10,9 @@
         height: 415px;
         object-fit: cover;
         border-radius: 25px;
+        @media screen and (max-width: 768px) {
+          height: 255px;
+      }
     }
   
     &__button {
@@ -18,15 +21,30 @@
       transform: translateY(-50%);
       border: none;
       cursor: pointer;
-      font-size: 2rem;
+      font-size: 44px;
       background-color: transparent;
+      @media screen and (max-width: 768px) {
+        width: 20px;
+    }
   
       &.left {
         left: 10px;
+
+        & svg {
+          @media screen and (max-width: 768px) {
+            width: 12px;
+          }
+        }
       }
   
       &.right {
         right: 10px;
+
+        & svg {
+          @media screen and (max-width: 768px) {
+            width: 12px;
+          }
+        }
       }
   
     }

@@ -3,6 +3,7 @@ import logementsData from '../data/logements.json';
 import Card from '../components/Card';
 import Banner from '../components/Banner';
 import homeBanner from '../images/home-banner.png';
+import '../styles/pages/home.scss';
 
 function Home() {
   const title = (
