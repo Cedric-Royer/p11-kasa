@@ -12,9 +12,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     @media screen and (max-width: 768px) {
-        height: 110px; 
-        justify-content: flex-start;
-        padding-left: 10px;
+        justify-content: left;
+        height: 110px
     }
   }
   
@@ -47,8 +46,8 @@
     justify-self: flex-start;
     padding: 0 8px;
     @media screen and (max-width: 768px) {
-        font-size: 20px;
-        text-align: left;
+        font-size: 24px;
+        padding-left: 15px;
     }
 
     .title-part {
@@ -56,7 +55,6 @@
         @media (max-width: 768px) {
             text-align: left;
             display: block; 
-
         }
     }
 }   

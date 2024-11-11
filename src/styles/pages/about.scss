@@ -3,4 +3,10 @@
     max-width: 1240px;
     margin: 0 auto;
     padding-top: 30px;
+
+    .collapse__content {
+        @media screen and (max-width: 600px) {
+            font-size: 14px
+        }
+    }
 }

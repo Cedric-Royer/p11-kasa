@@ -95,6 +95,9 @@
             font-weight: 700;
             height: 54px;
         }
+        .collapse__content {
+            font-size: 16px;
+        }
     }
 
     &.medium {
@@ -103,6 +106,9 @@
             font-size: 16px;
             font-weight: 700;
             height: 52px;
+        }
+        .collapse__content {
+            font-size: 16px;
         }
 
     }
@@ -113,6 +119,9 @@
             font-size: 12px;
             font-weight: 700;
             height: 30px;
+        }
+        .collapse__content {
+            font-size: 12px;
         }
 
     }    
