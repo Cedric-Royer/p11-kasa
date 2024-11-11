@@ -8,7 +8,7 @@ import StarRating from '../components/StarRating';
 import '../styles/pages/logement.scss';
 import TagList from '../components/TagList';
 
-function Logement() {
+const Logement = () => {
   const { id } = useParams();
   const logement = logementsData.find((logement) => logement.id === id);
   const { width } = useWindowSize();
@@ -35,28 +35,24 @@ function Logement() {
 
   return (
     <div className="logement">
+
       <Slideshow pictures={logement.pictures} /> 
 
       <div className="logement__description">
-
         <div className="logement__description__main">
           <h1 className="logement__title">{logement.title}</h1>
           <p className="logement__location">{logement.location}</p>
           <TagList tags={logement.tags} />
         </div>
-        
         <div className="logement__description__details">
           <div className="logement__host">
             <p className="logement__host__name">{logement.host.name}</p>
-            <img className="logement__host__picture" src={logement.host.picture} alt="photo de profil de l'hôte"></img>
+            <img className="logement__host__picture" src={logement.host.picture} alt="Profil de l'hôte"></img>
           </div>
-
           <StarRating rating={logement.rating} />
-
+        </div>
       </div>
-
-      </div>
-     
+           
       <div className="logement__collapse-container">
         <Collapse
           size={collapseSize}  

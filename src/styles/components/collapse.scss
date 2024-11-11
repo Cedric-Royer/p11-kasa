@@ -32,20 +32,27 @@
         transition: transform 0.3s ease-in-out;
 
         &.rotate {
-            transform: rotate(180deg);
+            transform: rotate(-180deg);
         }
 
-        &.large {
-            font-size: 24px;
+        & svg {
+
+            &.large {
+                width: 24px;
+                height: 14px;
+            }
+    
+            &.medium {
+                width: 24px;
+                height: 14px;
+            }
+    
+            &.small {
+                width: 16px;
+                height: 9px;
+            }
         }
 
-        &.medium {
-            font-size: 24px;
-        }
-
-        &.small {
-            font-size: 16px;
-        }
     }
 
     &__content {

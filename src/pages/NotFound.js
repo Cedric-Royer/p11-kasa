@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/pages/notFound.scss';
 import { Link } from 'react-router-dom';
+import '../styles/pages/notFound.scss';
 
-function NotFound() {
+const NotFound = () => {
   return <div className="notFound-page-content">
     <span className="error-code">404</span>
     <span className="error-message">Oups! La page que vous demandez n'existe pas.</span>

@@ -5,7 +5,7 @@ import Banner from '../components/Banner';
 import homeBanner from '../images/home-banner.png';
 import '../styles/pages/home.scss';
 
-function Home() {
+const Home = () => {
   const title = (
     <>
       <span className="title-part">Chez vous, </span>

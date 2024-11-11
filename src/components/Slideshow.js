@@ -13,12 +13,12 @@ const Slideshow = ({ pictures }) => {
   };
 
   if (pictures.length === 1) {
-    return <img className="slideshow__picture" src={pictures[0]} alt="Photo du logement" />;
+    return <img className="slideshow__picture" src={pictures[0]} alt="Logement" />;
   }
 
   return (
     <div className="slideshow">
-      <img className="slideshow__picture" src={pictures[currentIndex]} alt={`Photo du logement ${currentIndex + 1}`} />
+      <img className="slideshow__picture" src={pictures[currentIndex]} alt={`Logement ${currentIndex + 1}`} />
       {pictures.length > 1 && (
         <>
           <button className="slideshow__button left" onClick={prevSlide}>
