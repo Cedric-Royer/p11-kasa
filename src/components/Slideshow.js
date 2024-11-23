@@ -5,11 +5,11 @@ const Slideshow = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+    setCurrentIndex((currentIndex) => (currentIndex + 1) % pictures.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+    setCurrentIndex((currentIndex) => (currentIndex - 1 + pictures.length) % pictures.length);
   };
 
   if (pictures.length === 1) {
